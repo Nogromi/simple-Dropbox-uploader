@@ -38,6 +38,7 @@ if __name__ == '__main__':
     db_name = sys.argv[1]
     time = (datetime.now())
     time = time.strftime(":%d.%m.%Y%I:%M")
+    # Bash command to dump
     os.system(
         'pg_dump --host localhost --port 5432 --username postgres --no-password  --format plain --verbose --file $PWD/' +
         db_name + time + '.sql ' + db_name)
