@@ -31,7 +31,7 @@ def backup(LOCALFILE, BACKUPPATH):
                     print(err)
                     sys.exit()
     except FileNotFoundError:
-        sys.exit("ERROR: A file is requested but doesn’t exist.")
+        sys.exit("ERROR: A dump-file is requested but doesn’t exist.")
 
 
 if __name__ == '__main__':
